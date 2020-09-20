@@ -5,7 +5,7 @@
     </h1>
     <ul>
       {% for post in site.posts limit:3 %}
-      <li><strong><a href="{{post.url}}">§ {{post.title}}</a></strong> <em>[{{ post.date | timeago }}]</em> </li>
+      <li><strong><a href="{{post.url}}">§ {{post.title}}</a></strong> <em>[{{ post.date | date: "%D" }}]</em> </li>
       {% endfor %}
     </ul>
   </div>

@@ -16,7 +16,7 @@
         <div class="content">
           {% if post.image %}
           <a class="title is-5" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a><br><em class="is-size-6">
-            {{ post.date | timeago }}</em><br>
+            {{ post.date | date: "%D" }}</em><br>
           {% endif %}
           <a href="{{ site.baseurl }}{{ post.url }}">
           <p class="is-size-6 has-text-grey-dark"> {{post.lead}}</p>
