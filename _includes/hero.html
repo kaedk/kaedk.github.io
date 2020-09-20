@@ -10,7 +10,7 @@
           </span>
           {% if page.date %}
           <br><div class="is-one-qarter tytlon has-text-black">
-            opublikowano {{ page.date | timeago }}
+            opublikowano {{ page.date | date: "%D" }}
             <!--
             w kategorii
             {% for tag in page.tags %}
