@@ -1,0 +1,27 @@
+---
+title: Archiwum wpisów
+subtitle: I właściwie po co?
+layout: page
+show_sidebar: false
+hide_hero: false
+image: /img/autorka.jpg
+hide_flapper: true
+office: false
+date: 2020-01-01
+posts: site.posts
+years: [2020, 2019]
+published: false
+months: [12,11,10,9,8,7,6,5,4,3,2,1]
+---
+
+
+<h1>Archive of posts from {{ page.date | date: "%Y" }}</h1>
+
+<ul class="posts">
+{% for post in page.posts %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+  </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="content post">
+    {{ content }}
+</div>
+
+<div class="has-text-right is-hidden-mobile">
+  <em>Edyta Kuś</em>
+</div>
+
+<!--
+{% unless site.hide_share_buttons %}
+{% include share-buttons.html %}
+{% endunless %}
+-->
+
+{% if site.disqus.shortname %}
+  {% include disqus.html %}
+{% endif %}

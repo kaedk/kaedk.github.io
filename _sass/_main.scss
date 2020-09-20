@@ -1,0 +1,164 @@
+@charset "utf-8";
+@import url("https://use.typekit.net/lhl1hbn.css");
+
+
+$primary: #188eac !default;
+
+$tabs-link-active-color: $primary;
+$tabs-link-active-border-bottom-color: $primary;
+
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+// $blue: #06bcef;
+// Add pink and its invert
+$advocat: #326647;
+$advocat-invert: #EEFFF0;
+// Update the sans-serif font family
+$family-sans-serif: "sofia-pro", sans-serif;
+$link: $advocat !default;
+$black: #202025;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $advocat;
+$primary-invert: $advocat-invert;
+
+@import "../node_modules/bulma/bulma.sass";
+$hero-darken: $dark !default;
+
+@import "layout";
+@import "syntax";
+@import "showcase";
+@import "../node_modules/bulma-block-list/src/block-list.scss";
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+.gh-sponsor {
+  color: #ea4aaa;
+}
+
+#logotext {
+  line-height: 1em;
+  margin-left: .5em;
+}
+
+.has-background{
+  background-size:     cover;
+  background-repeat:   no-repeat;
+  background-position: center center;
+    /* position: absolute;
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    background-color: red;
+    background-image: url("./remont.jpg");
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;
+    opacity: 0.5; */
+    z-index: 1;
+
+}
+
+
+.hwhite-blog{
+  backdrop-filter: saturate(25%) blur(2px);
+  -webkit-backdrop-filter: saturate(25%) blur(2px);
+  background-color: white;
+  border-radius: 1em;
+  /*text-shadow: .2em -.2em $advocat;*/
+  opacity: 1;
+  line-height: 3em;
+  border-top: 0em solid rgba(255, 255, 255, 0);
+  border-bottom: 0 solid rgba(255, 255, 255, 0);
+  padding:1em;
+  display:inline-block;
+  z-index: 9999;
+  color:red;
+}
+
+
+
+.tytlan-blog{
+  border-radius: 1em;
+  backdrop-filter: saturate(25%) blur(2px);
+  -webkit-backdrop-filter: saturate(25%) blur(2px);
+  background-color: rgba(255, 255, 255, 0.85);
+  /*text-shadow: .2em -.2em $advocat;*/
+  opacity: .95;
+  line-height: 3em;
+  border-top: 0em solid rgba(255, 255, 255, 0);
+  border-bottom: 0 solid rgba(255, 255, 255, 0);
+  padding:1em;
+  display:inline-block;
+  z-index: 9999;
+}
+
+
+
+.tytlan-office{
+  backdrop-filter: saturate(25%) blur(2px);
+  -webkit-backdrop-filter: saturate(25%) blur(2px);
+  background-color: $advocat;
+  /*text-shadow: .2em -.2em $advocat;*/
+  opacity: .9;
+  line-height: 3em;
+  border-top: 0em solid rgba(255, 255, 255, 0);
+  border-bottom: 0 solid rgba(255, 255, 255, 0);
+  padding:1em;
+  display:inline-block;
+  z-index: 9999;
+}
+
+.tytlon{
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: saturate(25%) blur(2px);
+  background-color: rgba(255, 255, 255, 0.55);
+  /*text-shadow: .2em -.2em $advocat;*/
+  opacity: .9;
+  line-height: 1.25em;
+  padding:1em;
+  display:block;
+  margin-top:1em;
+  border-radius: 1em;
+  float:left;
+}
+
+.kartusz {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.ribbon {
+  padding-bottom: .125em solid $advocat;
+  border-bottom: .125em solid $advocat;
+}
+
+
+.wibbon {
+  border-bottom: .125em solid white;
+}
+
+.blogbar {
+  -webkit-backdrop-filter: saturate(25%) blur(5px);
+  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid rgba(6, 78, 48, 0.05);
+}
+
+$link: $primary !default;
+
+.post {
+  margin-bottom: 5em;
+}
+
+.delicato {
+  margin-bottom:3em;
+  font-family: "delicato";
+  line-height: 1.4em;
+}
+
+.fat {
+  font-weight:700;
+}

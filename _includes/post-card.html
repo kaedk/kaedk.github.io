@@ -1,0 +1,23 @@
+<div class="card">
+    {% if post.image %}
+    <!--<div class="card-image">
+        <img src="{{ post.image }}" alt="{{ post.title }}">
+    </div>-->
+    {% else %}
+
+    {% endif %}
+    <a href="{{ site.baseurl }}{{ post.url }}">
+    <div class="card-content">
+        <div class="content">
+            {% if post.image %}
+            <a class="title is-5" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a><br>
+            <span><em>{{ post.date | timeago }}</em></span>
+            {% endif %}
+            <!--
+            <p>{{ post.lead }}</p>
+            -->
+        </div>
+    </div>
+    </a>
+
+</div>

@@ -1,0 +1,31 @@
+<section class="hero is-medium has-background {% if page.office %}is-primary{% else %}is-white{% endif %}" style="background-image: url('{{ page.image }}');">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-full is-centered">
+          <span class="{% unless page.hero_class %}tytlan{% else %}{{page.hero_class}}{% endunless %}-{% if page.office %}office{% else %}blog{% endif %}">
+            <span class="is-size-1-desktop is-size-3-mobile has-text-weight-semibold {% unless page.hero_text %}has-text-{% if page.office %}white{% else %}black{% endif %}{%else%}{{page.hero_text}}{%endunless%}">
+              {{ page.title }}
+            </span><br>
+          </span>
+          {% if page.date %}
+          <br><div class="is-one-qarter tytlon has-text-black">
+            opublikowano {{ page.date | timeago }}
+            <!--
+            w kategorii
+            {% for tag in page.tags %}
+            {{ tag }}
+            {% endfor %}-->
+          </div><br>
+          {% endif %}
+
+          {% if page.subtitle %}<br>
+          <span class="is-full tytlon has-text-black">
+            {{ page.subtitle }}
+          </span><br>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

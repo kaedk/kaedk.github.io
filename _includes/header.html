@@ -1,0 +1,116 @@
+
+
+
+
+
+
+
+<nav class="navbar is-fixed-top blogbar {% if page.office %}is-primary{% endif %}" role="navigation" aria-label="main navigation">
+
+  <div class="container">
+
+
+    <div class="navbar-brand">
+      <a href="{{ site.baseurl }}/{% unless page.office %}blog{% endunless %}" class="navbar-item">
+        <img src="/img/logo{% if page.office %}{% else %}-green{% endif %}.svg" width="28" height="28">
+        <div id="logotext" class="is-primary {% if page.office %}has-text-white{% else %}has-text-primary{% endif %}">
+
+          {% if page.office %}Kancelaria Adwokacka<br><strong>Edyta Kuś</strong>{%else%}{{site.title}}<br><strong>Edyta Kuś</strong>{% endif %}
+
+        </div>
+      </a>
+      <div role="button" class="is-red  navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+
+        {% if page.office %}
+
+        {% for item in site.data.office-navigation %}
+        {% if item.dropdown %}
+        <div class="navbar-item {% if page.office %}is-primary{% endif %} has-dropdown is-hoverable">
+
+          <a href="{{ item.link | relative_url }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+          <div class="navbar-dropdown">
+            {% for subitem in item.dropdown %}
+            <a href="{{ subitem.link | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        {% else %}
+        <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}  {% if page.office %}is-primary{% endif %}">{{ item.name }}</a>
+        {% endif %}
+        {% endfor %}
+
+        {% else %}
+
+        {% for item in site.data.blog-navigation %}
+        {% if item.dropdown %}
+        <div class="navbar-item  has-text-primary has-dropdown is-hoverable">
+          <a href="{{ item.link | relative_url }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+          <div class="navbar-dropdown">
+            {% for subitem in item.dropdown %}
+            <a href="{{ subitem.link | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        {% else %}
+        <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}  has-text-primary">{{ item.name }}</a>
+        {% endif %}
+        {% endfor %}
+
+        {% endif %}
+
+
+        {% if site.data.navigation %}
+        {% for item in site.data.navigation %}
+        {% if item.dropdown %}
+        <div class="navbar-item  has-text-primary has-dropdown is-hoverable">
+          <a href="{{ item.link | relative_url }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+          <div class="navbar-dropdown">
+            {% for subitem in item.dropdown %}
+            <a href="{{ subitem.link | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
+            {% endfor %}
+          </div>
+        </div>
+        {% else %}
+        <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}  has-text-primary">{{ item.name }}</a>
+        {% endif %}
+        {% endfor %}
+        {% endif %}
+      </div>
+
+
+      {% if page.office %}
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-white is-outlined" href="/contact">
+              Skontaktuj się z adwokatem
+            </a>
+          </div>
+        </div>
+      </div>
+
+      {% else %}
+      <!--
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a class="button is-primary is-outlined" href="/">
+              Kancelaria
+            </a>
+          </div>
+        </div>
+      </div>
+      -->
+      {% endif %}
+
+    </div>
+  </div>
+</nav>

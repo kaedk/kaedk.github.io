@@ -1,0 +1,6 @@
+- name: Klient indywidualny
+  link: /indywidualny/
+- name: Klient biznesowy
+  link: /biznesowy/
+- name: Blog
+  link: /Blog/

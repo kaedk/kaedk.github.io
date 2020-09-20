@@ -1,1 +1,94 @@
-theme: jekyll-theme-minimal
+# Site Settings
+title: Edyta Kuś — Blog prawniczy
+tagline: O prawie, w prawie, w ramach prawa
+email: kontakt@edytakus.pl
+description: >
+  Jestem prawniczką i piszę o prawie. Na blogu wyjaśniam, możliwie ludzkim językiem, prawne meandry spraw, które spotykają moich czytelników.
+# baseurl: "/blog"
+url: "https://edytakus.pl"
+permalink: pretty
+default_locale: "pl"
+
+paginate: 5
+paginate_path: "/blog/page:num"
+
+# Disqus Comments
+disqus:
+  shortname: adwokatek
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  - kramdown
+  - rouge
+  - jekyll-redirect-from
+  - jekyll-archives
+  - jekyll-timeago
+
+exclude:
+  - Gemfile
+  - clean-theme.gemspec
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+livereload: true
+
+sass:
+  style: compressed
+  source_dir: _sass
+
+#google_analytics: UA-code-here
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Edyta Kuś"
+      layout: post
+      image: https://via.placeholder.com/1200x800
+      show_sidebar: true
+
+markdown: kramdown
+highlighter: rouge
+
+footer_menu: example_footer_menu
+
+collections:
+  products:
+    output: true
+    layout: product
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
+
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+
+jekyll_timeago:
+  depth: 2
+  translations_path: '/locales/*.yml'
+  available_locales:
+    - 'ru'
+    - 'pl'
+  default_locale: 'ru'
+  fallbacks: true
