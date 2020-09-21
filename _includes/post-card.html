@@ -11,7 +11,7 @@
         <div class="content">
             {% if post.image %}
             <a class="title is-5" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a><br>
-            <span><em>{{ post.date | timeago }}</em></span>
+            <span><em>{{ post.date | date: "%D" }}</em></span>
             {% endif %}
             <!--
             <p>{{ post.lead }}</p>
