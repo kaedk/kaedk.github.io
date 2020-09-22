@@ -11,7 +11,7 @@
 
 
     <div class="navbar-brand">
-      <a href="{{ site.baseurl }}/{% unless page.office %}blog{% endunless %}" class="navbar-item">
+      <a href="{{ site.baseurl }}/{% unless page.office %}{% endunless %}" class="navbar-item">
         <img src="/img/logo{% if page.office %}{% else %}-green{% endif %}.svg" width="28" height="28">
         <div id="logotext" class="is-primary {% if page.office %}has-text-white{% else %}has-text-primary{% endif %}">
 
