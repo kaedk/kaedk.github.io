@@ -11,7 +11,7 @@ hide_flapper: true
 <div class="columns is-centered">
   <div class="column is-one-third">
     <figure class="image is-one-third">
-      <img class="is-rounded" src="/img/czerwony.jpeg" alt="Placeholder image">
+      <img class="is-rounded" src="/img/ekus.jpg" alt="Placeholder image">
     </figure>
   </div>
 </div>
