@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Pozycja świadka w postępowaniu karnym i cywilnym
-date: 2020-09-22
+date: 2020-09-23
 image: /img/oko.jpg
 lead: Niejednej osobie szybciej zabiło serce, kiedy odbierała wezwanie do złożenia zeznań w charakterze świadka. Stres i obawa przed występowaniem w sądzie (lub innej instytucji) nadal są dość powszechne, mimo że od świadka oczekuje się  „jedynie” przekazania informacji na temat danej sprawy. W tym artykule postaram się przybliżyć prawa i obowiązki świadka, aby wizja składania zeznań nie napawała dłużej niechęcią.
 tags: Prawo medyczne Prawo cywilne Proces
