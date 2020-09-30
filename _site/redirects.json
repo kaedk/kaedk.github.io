@@ -1,1 +1,1 @@
-{"/biznesowy/":"http://0.0.0.0:4000/blog","/blog/":"http://0.0.0.0:4000/","/indywidualny/":"http://0.0.0.0:4000/blog"}
+{"/biznesowy/":"http://localhost:4000/blog","/blog/":"http://localhost:4000/","/indywidualny/":"http://localhost:4000/blog"}
