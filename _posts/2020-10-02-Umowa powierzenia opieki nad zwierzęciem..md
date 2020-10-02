@@ -4,7 +4,7 @@ title: Umowa powierzenia opieki nad zwierzęciem.
 date: 2020-10-02
 image: /img/umowapowierzeniaopieki.jpg
 lead: Mimo że dzieci wyjęły już z szaf tornistry, wiele osób dopiero teraz rozważa wyjazd na urlop. Wyjazdy w miesiącach jesiennych dają możliwość wyrwania się z deszczu i szarości, zazwyczaj są tańsze. Wiedzą powszechną jest, że do urlopu trzeba się przygotować, w tym w szczególności zadbać o pozostające pod naszą opieką zwierzęta. W tym wpisie postaram się wyjaśnić, dlaczego warto zdecydować się na sporządzenie pisemnej umowy o powierzeniu opieki na zwierzęciem oraz, co powinno się w takiej umowie znaleźć.
-permalink: edytakus.pl/opieka
+permalink: opieka
 ---
 
 ## Dlaczego warto zawrzeć umowę na piśmie?
