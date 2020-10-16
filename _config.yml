@@ -9,7 +9,7 @@ url: "https://edytakus.pl"
 permalink: pretty
 default_locale: "pl"
 
-paginate: 5
+paginate: 8
 paginate_path: "/blog/page:num"
 
 # Disqus Comments
