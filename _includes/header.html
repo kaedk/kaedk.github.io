@@ -1,34 +1,21 @@
-
-
-
-
-
-
-
+<!-- Navbar -->
 <nav class="navbar is-fixed-top blogbar {% if page.office %}is-primary{% endif %}" role="navigation" aria-label="main navigation">
-
   <div class="container">
-
-
     <div class="navbar-brand">
       <a href="{{ site.baseurl }}/{% unless page.office %}{% endunless %}" class="navbar-item">
         <img src="/img/logo{% if page.office %}{% else %}-green{% endif %}.svg" width="28" height="28">
         <div id="logotext" class="is-primary {% if page.office %}has-text-white{% else %}has-text-primary{% endif %}">
-
           {% if page.office %}Kancelaria Adwokacka<br><strong>Edyta Kuś</strong>{%else%}Blog prawniczy<br><strong>Edyta Kuś</strong>{% endif %}
-
         </div>
       </a>
       <div role="button" class="is-red  navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
       </div>
     </div>
-
     <div class="navbar-menu" id="navMenu">
       <div class="navbar-start">
-
         {% if page.office %}
 
         {% for item in site.data.office-navigation %}

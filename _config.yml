@@ -1,9 +1,9 @@
 # Site Settings
-title: Edyta Kuś — Blog prawniczy
+title: Blog prawniczy — Edyta Kuś
 tagline: O prawie, w prawie, w ramach prawa
 email: kontakt@edytakus.pl
 description: >
-  Jestem prawniczką i piszę o prawie. Na blogu wyjaśniam, możliwie ludzkim językiem, prawne meandry spraw, które spotykają moich czytelników.
+  Blog adwokatki z Wrocławia. W każdą środę i piątek umieszczam wpis starający się możliwie ludzkim językiem wyjaśniać codzienne problemy prawne.
 # baseurl: "/blog"
 url: "https://edytakus.pl"
 permalink: pretty
@@ -67,12 +67,21 @@ highlighter: rouge
 
 footer_menu: example_footer_menu
 
+
+
 collections:
   products:
     output: true
     layout: product
     image: https://via.placeholder.com/800x600
     show_sidebar: false
+  articles:
+    sort_by: sok
+    output: true
+    layout: article
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
+    hide_hero: true
 
 jekyll-archives:
   enabled: all

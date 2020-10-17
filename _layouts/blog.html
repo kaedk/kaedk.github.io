@@ -4,14 +4,8 @@ layout: default
 
 {{ content }}
 
-    <!--
-    <div class="column is-12">
-        {% include pagination.html %}
-    </div>
-    -->
 <div class="columns is-multiline">
 {% for post in paginator.posts %}
-
   {% include post-home.html %}
 {% endfor %}
 </div>
