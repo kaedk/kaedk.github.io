@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://localhost:4000/articles/art483p1KC/</loc>
-<lastmod>2020-10-17T17:24:44+02:00</lastmod>
+<lastmod>2020-10-21T14:55:11+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/pozycjaswiadka</loc>
@@ -37,16 +37,20 @@
 <lastmod>2020-10-16T00:00:00+02:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/znakitowarowe2</loc>
+<lastmod>2020-10-21T00:00:00+02:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/products/product1/</loc>
-<lastmod>2020-10-17T17:24:44+02:00</lastmod>
+<lastmod>2020-10-21T14:55:11+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/products/product2/</loc>
-<lastmod>2020-10-17T17:24:44+02:00</lastmod>
+<lastmod>2020-10-21T14:55:11+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/products/product3/</loc>
-<lastmod>2020-10-17T17:24:44+02:00</lastmod>
+<lastmod>2020-10-21T14:55:11+02:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about/</loc>
@@ -85,6 +89,9 @@
 <loc>http://localhost:4000/2020/10/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/2020/10/21/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/2020/10/16/</loc>
 </url>
 <url>
@@ -110,5 +117,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/2020/09/23/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/blog/page2/</loc>
 </url>
 </urlset>
