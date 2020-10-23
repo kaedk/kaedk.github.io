@@ -5,7 +5,7 @@ date: 2020-10-23
 image: /img/stosunekpracy.jpg
 ttimage: /img/stosunekpracy-twitter.png
 lead: Większość z nas chociaż raz w życiu zawierała umowę o pracę. Umowy takie czasem są krótkie, składające się niemal wyłącznie z powtórzenia zapisów Kodeksu pracy. Niekiedy pracodawca jest bardziej kreatywny i umowa ustanawia zakaz konkurencji. W przedmiotowym wpisie wyjaśniam, jak powinien być ukształtowany taki zakaz oraz, o co zadbać, by później nie żałować.
-permalink: zakazkonkurencjiwpracy
+permalink: zakazkonkurencji
 ---
 
 #### Czym jest działalność konkurencyjna?
